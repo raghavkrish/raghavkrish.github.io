@@ -1,165 +1,747 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Raghav K</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.4.2/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Raghav Krishnendar</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="..." /></span>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Raghav Krishnendar's Portfolio - Senior Software Engineer with 8+ years of experience in backend technologies and cloud solutions." />
+    <meta name="author" content="Raghav Krishnendar" />
+    <title>Raghav Krishnendar - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.4.2/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 font-muli">
+    <!-- Navigation-->
+    <nav class="bg-gradient-to-r from-indigo-600 to-blue-500 p-4 fixed w-full z-50 shadow-xl transition-all duration-300" id="mainNav">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#hero" class="text-white text-xl font-bold hover:text-gray-200 transition duration-300 flex items-center">
+                <span class="bg-white text-indigo-600 h-8 w-8 rounded-full flex items-center justify-center mr-2 shadow-md">RK</span>
+                Raghav Krishnendar
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/assets/docs/Raghav_Resume.pdf" download="Raghav_Resume.pdf">Resume <i class="fa-solid fa-download"></i></a></li>
-                </ul>
+            <button class="text-white lg:hidden focus:outline-none p-2 rounded-lg hover:bg-indigo-700 transition duration-300" id="navbarToggler">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="hidden lg:flex space-x-1" id="navbarResponsive">
+                <a href="#about" class="text-white hover:text-gray-200 px-3 py-2 rounded-lg hover:bg-indigo-700 transition duration-300">About</a>
+                <a href="#experience" class="text-white hover:text-gray-200 px-3 py-2 rounded-lg hover:bg-indigo-700 transition duration-300">Experience</a>
+                <a href="#projects" class="text-white hover:text-gray-200 px-3 py-2 rounded-lg hover:bg-indigo-700 transition duration-300">Projects</a>
+                <a href="#skills" class="text-white hover:text-gray-200 px-3 py-2 rounded-lg hover:bg-indigo-700 transition duration-300">Skills</a>
+                <a href="#education" class="text-white hover:text-gray-200 px-3 py-2 rounded-lg hover:bg-indigo-700 transition duration-300">Education</a>
+                <a href="#contact" class="text-white hover:text-gray-200 px-3 py-2 rounded-lg hover:bg-indigo-700 transition duration-300">Contact</a>
+                <a href="/assets/docs/Raghav_Resume.pdf" download="Raghav_Resume.pdf" class="ml-2 bg-white text-indigo-600 hover:bg-gray-100 px-4 py-2 rounded-lg transition duration-300 flex items-center shadow-md">
+                    <span>Resume</span>
+                    <i class="fa-solid fa-download ml-2"></i>
+                </a>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Raghav
-                        <span class="text-primary">Krishnendar</span>
+        </div>
+    </nav>
+    
+    <!-- Mobile Navigation Menu (Hidden by default) -->
+    <div class="fixed inset-0 bg-gray-900 bg-opacity-90 z-40 hidden transition-all duration-300" id="mobileNav">
+        <div class="flex justify-end p-4">
+            <button class="text-white focus:outline-none p-2 rounded-lg hover:bg-indigo-700 transition duration-300" id="mobileNavClose">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+        <div class="flex flex-col items-center justify-center h-full space-y-6 -mt-16">
+            <a href="#about" class="text-white hover:text-indigo-300 text-xl transition duration-300 mobile-nav-link">About</a>
+            <a href="#experience" class="text-white hover:text-indigo-300 text-xl transition duration-300 mobile-nav-link">Experience</a>
+            <a href="#projects" class="text-white hover:text-indigo-300 text-xl transition duration-300 mobile-nav-link">Projects</a>
+            <a href="#skills" class="text-white hover:text-indigo-300 text-xl transition duration-300 mobile-nav-link">Skills</a>
+            <a href="#education" class="text-white hover:text-indigo-300 text-xl transition duration-300 mobile-nav-link">Education</a>
+            <a href="#contact" class="text-white hover:text-indigo-300 text-xl transition duration-300 mobile-nav-link">Contact</a>
+            <a href="/assets/docs/Raghav_Resume.pdf" download="Raghav_Resume.pdf" class="mt-4 bg-white text-indigo-600 hover:bg-gray-100 px-6 py-3 rounded-lg transition duration-300 flex items-center shadow-md">
+                <span>Download Resume</span>
+                <i class="fa-solid fa-download ml-2"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-indigo-900 to-blue-700 opacity-90"></div>
+        <div class="container mx-auto px-4 z-10 py-20">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                        Building <span class="text-yellow-400">Scalable</span> & <span class="text-yellow-400">Reliable</span> Systems
                     </h1>
-                    <div class="subheading mb-5">
-                        Chennai · +91 - 9840612536 ·
-                        <a href="mailto:raghavkrish@proton.me">raghavkrish@proton.me</a>
-                    </div>
-                    <p class="lead mb-5">Having 8+ years of experience working at startups and companies with highly competitive agile environments on various backend technologies and multiple clouds. Looking to be associated with an organization which can provide me with a dynamic work sphere to extract my inherent skills as a Professional, use and develop my aptitude to further the organization’s objectives and also attain my career targets in the progress.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://in.linkedin.com/in/raghav-krishnendar-a581343b"><i class="fab fa-linkedin-in"></i></a>
-                        <!--<a class="social-icon" href="#!"><i class="fab fa-github"></i></a> -->
+                    <p class="text-gray-200 text-xl mb-8 max-w-lg mx-auto lg:mx-0">
+                        Senior Software Engineer with 8+ years of experience in backend technologies and cloud solutions.
+                    </p>
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold px-8 py-3 rounded-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Hire Me
+                        </a>
+                        <a href="#projects" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-indigo-700 px-8 py-3 rounded-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            View My Work
+                        </a>
                     </div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Software Engineer</h3>
-                            <div class="subheading mb-3">Optum Insight India Pvt. Ltd.</div>
-                            <div class="mb-3">
-                                <ul>
-                                        <li><p> Dockerized an application and re-architectured them to be deployed on multiple clouds (AWS and Azure) using Kubernetes and setup the complete CI and CD (Jenkins) </p></li>
-                                        <li><p> Migrated an on-prem Data Warehouse from Oracle to AWS using Redshift as the Data store and completely automated the Data Delivery pipeline using S3 as the input and output for the execution process and reduced the delivery time by 75%. </p></li>
-                                        <li><p> Automated an execution pipeline for data processing in Redshift via AWS Step Functions, SNS and Lambda which sets up all the Databases, Tables and Views from scratch based on external tables with S3 as the data source on every execution whose triggers are automated using Jenkins and can be customized as required. This reduced the execution time from Oracle by 40%. </p></li>
-                                        <li><p> Have designed and architected and migrated multiple applications to multiple clouds (AWS/Azure) using Infrastructure as Code (Terraform) </p></li>
-                                        <li><p> Have setup Jenkins CI/CD for multiple project using declarative pipeline and have written multiple pipeline library code which are independent modules which act as framework code to be used by multiple teams for setting up their pipelines </p></li>
-                                        <li><p> Setup a form builder tool which allows questions to be created dynamically and be added into the form immediately for them to be displayed in an Doctors appointments booking application. </p></li>
-                                        <li><p> Designed and Implemented CERNER integration to an Doctor appointment Scheduling Application using Smart Apps on FHIR. </p></li>
-                                        <li><p> Have provided technical mentorship to my team for solidifying product reliability and adherence to quality standards.</p></li>
-
-                                </ul>
+                <div class="lg:w-1/2 flex justify-center lg:justify-end" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-yellow-400 rounded-full opacity-75 blur-lg animate-pulse"></div>
+                        <img src="assets/img/profile.png" alt="Raghav Krishnendar" class="w-64 h-64 lg:w-80 lg:h-80 rounded-full object-cover border-4 border-white shadow-2xl relative z-10">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 text-center pb-8">
+            <a href="#about" class="text-white animate-bounce inline-block">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Page Content-->
+    <div class="container mx-auto px-4">
+        <!-- About-->
+        <section id="about" class="py-20">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <span class="bg-indigo-100 text-indigo-800 text-sm font-semibold px-4 py-1 rounded-full uppercase tracking-wider">About Me</span>
+                <h2 class="text-4xl font-bold text-gray-800 mt-2">Who I Am</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0" data-aos="fade-right" data-aos-delay="100">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-indigo-200 rounded-lg opacity-75 blur-lg"></div>
+                        <div class="bg-white p-8 rounded-lg shadow-xl relative z-10">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">My Journey</h3>
+                            <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                                With 8+ years of experience in backend technologies and cloud solutions, I specialize in building scalable, efficient, and reliable systems. I have worked in highly competitive agile environments, leveraging technologies like AWS, Azure, Docker, Kubernetes, and Terraform.
+                            </p>
+                            <p class="text-gray-700 text-lg leading-relaxed">
+                                I am passionate about solving complex problems and delivering high-quality solutions that drive business growth and improve user experiences.
+                            </p>
+                            <div class="mt-8 flex items-center">
+                                <div class="flex space-x-4">
+                                    <a href="https://in.linkedin.com/in/raghav-krishnendar-a581343b" class="text-indigo-600 hover:text-indigo-800 transition duration-300" aria-label="LinkedIn">
+                                        <i class="fab fa-linkedin-in text-2xl"></i>
+                                    </a>
+                                    <a href="https://github.com" class="text-indigo-600 hover:text-indigo-800 transition duration-300" aria-label="GitHub">
+                                        <i class="fab fa-github text-2xl"></i>
+                                    </a>
+                                    <a href="mailto:raghavkrish@proton.me" class="text-indigo-600 hover:text-indigo-800 transition duration-300" aria-label="Email">
+                                        <i class="fas fa-envelope text-2xl"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">May 2018 - July 2022</span></div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Product Developer</h3>
-                            <div class="subheading mb-3">Freshworks Inc.</div>
-                            <ul>
-                                <li><p>Developed a SDK which is a CLI and has a suite of frameworks to support Third Party Developers to write their own Apps which can be used to integrate them into Freshdesk and its suite of applications.</p></li>
-                                <li><p>Freshdesk Developer Extension - (Chrome Extension) that works conjointly with the Freshdesk SDK to test the developed Apps in local machine for Third Party Developers, available on Chrome Store. (now deprecated)</p></li>
-                                <li><p>Designed and Implemented a Multi product and multi asset REST API for Freshdesk App Marketplace using microservices architecture, A total of 7 services working together for Listing, Publishing and Consuming the Freshdesk Marketplace Apps with an API First Design.</p></li>
-                                <li><p>Automated deployments using Chef for Rails and NodeJS applications for Microservices Architecture. Automated Creation/Maintenance of AWS OpsWorks Stacks using Cloudformation</p></li>
+                </div>
+                <div class="lg:w-1/2 lg:pl-16" data-aos="fade-left" data-aos-delay="100">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                            <div class="text-indigo-600 mb-4">
+                                <i class="fas fa-server text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Backend Development</h3>
+                            <p class="text-gray-600">Building robust and scalable server-side applications.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2014 - Feb 2018</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">SASTRA University</h3>
-                            <div class="subheading mb-3">B.Tech Computer Science and Engineering</div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                            <div class="text-indigo-600 mb-4">
+                                <i class="fas fa-cloud text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Cloud Solutions</h3>
+                            <p class="text-gray-600">Designing and implementing cloud-native architectures.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - May 2014</span></div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                            <div class="text-indigo-600 mb-4">
+                                <i class="fas fa-database text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Data Engineering</h3>
+                            <p class="text-gray-600">Creating efficient data processing pipelines.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                            <div class="text-indigo-600 mb-4">
+                                <i class="fas fa-code-branch text-4xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">DevOps</h3>
+                            <p class="text-gray-600">Automating deployment and infrastructure management.</p>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Technologies</div>
-                    <ul class="mb-0">
-                        <li>Ruby on Rails</li>
-                        <li>Node JS</li>
-                        <li>AWS</li>
-                        <li>Azure</li>
-                        <li>Docker</li>
-                        <li>Kubernetes</li>
-                        <li>Java</li>
-                        <li>EmberJS</li>
-                        <li>Terraform</li>
-                    </ul>
-                    <div class="subheading mb-3">Tools</div>
-                    <ul class="mb-0">
-                        <li>Version Control: Git</li>
-                        <li>CI/CD: Jenkins</li>
-                        <li>Build Tools: Ant, Maven, Gradle</li>
-                        <li>Agile Development & Scrum: CA Central/Rally, JIRA, Trello </li>
+            </div>
+        </section>
+        <!-- Experience-->
+        <section id="experience" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <span class="bg-indigo-100 text-indigo-800 text-sm font-semibold px-4 py-1 rounded-full uppercase tracking-wider">Career Path</span>
+                    <h2 class="text-4xl font-bold text-gray-800 mt-2">Professional Experience</h2>
+                    <div class="w-24 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. I go on backpacking tours, exploring the unnchartered territories even in the most popular places.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows. I spend a large amount of my free time exploring the latest technological advancements.</p>
+                <div class="relative">
+                    <!-- Timeline Line -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-indigo-200 z-0"></div>
+                    
+                    <!-- Experience Items -->
+                    <div class="space-y-20">
+                        <!-- Experience 1 -->
+                        <div class="relative z-10" data-aos="fade-right" data-aos-delay="100">
+                            <div class="flex flex-col md:flex-row items-center">
+                                <div class="md:w-1/2 md:pr-12 mb-8 md:mb-0 text-right">
+                                    <div class="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 border-l-4 border-indigo-600 ml-auto md:ml-0 md:mr-0 max-w-lg">
+                                        <span class="text-sm font-semibold text-indigo-600 uppercase tracking-wider">May 2018 - July 2022</span>
+                                        <h3 class="text-2xl font-bold text-gray-800 mt-2">Senior Software Engineer</h3>
+                                        <div class="text-gray-600 font-semibold">Optum Insight India Pvt. Ltd.</div>
+                                        <div class="text-gray-700 mt-4">
+                                            <ul class="space-y-3">
+                                                <li class="flex items-start">
+                                                    <span class="text-indigo-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                                    <span>Dockerized applications and re-architected them for deployment on AWS and Azure using Kubernetes.</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <span class="text-indigo-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                                    <span>Migrated an on-prem Data Warehouse to AWS Redshift, reducing delivery time by 75%.</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <span class="text-indigo-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                                    <span>Automated data processing pipelines using AWS Step Functions, SNS, and Lambda.</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <span class="text-indigo-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                                    <span>Designed and implemented CI/CD pipelines using Jenkins and Terraform.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+                                    <div class="bg-indigo-600 h-12 w-12 rounded-full border-4 border-white shadow-xl flex items-center justify-center">
+                                        <i class="fas fa-briefcase text-white"></i>
+                                    </div>
+                                </div>
+                                <div class="md:w-1/2 md:pl-12"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Experience 2 -->
+                        <div class="relative z-10" data-aos="fade-left" data-aos-delay="100">
+                            <div class="flex flex-col md:flex-row items-center">
+                                <div class="md:w-1/2 md:pr-12"></div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+                                    <div class="bg-indigo-600 h-12 w-12 rounded-full border-4 border-white shadow-xl flex items-center justify-center">
+                                        <i class="fas fa-code text-white"></i>
+                                    </div>
+                                </div>
+                                <div class="md:w-1/2 md:pl-12 mb-8 md:mb-0 text-left">
+                                    <div class="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 border-r-4 border-indigo-600 mr-auto md:mr-0 md:ml-0 max-w-lg">
+                                        <span class="text-sm font-semibold text-indigo-600 uppercase tracking-wider">June 2014 - Feb 2018</span>
+                                        <h3 class="text-2xl font-bold text-gray-800 mt-2">Product Developer</h3>
+                                        <div class="text-gray-600 font-semibold">Freshworks Inc.</div>
+                                        <div class="text-gray-700 mt-4">
+                                            <ul class="space-y-3">
+                                                <li class="flex items-start">
+                                                    <span class="text-indigo-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                                    <span>Developed an SDK for third-party developers to integrate apps with Freshdesk.</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <span class="text-indigo-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                                    <span>Designed and implemented a multi-product REST API for the Freshdesk App Marketplace.</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <span class="text-indigo-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                                    <span>Automated deployments using Chef and AWS CloudFormation.</span>
+                                                </li>
+                                                <li class="flex items-start">
+                                                    <span class="text-indigo-600 mr-2"><i class="fas fa-check-circle mt-1"></i></span>
+                                                    <span>Led a team of 5 developers to deliver critical features on time.</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul>
-                        <li>Cisco Certified Network Associate</li>
-                        <li>Microsoft Technology Associate - Web Development Fundamentals</li>
-                        <li>IBM Campus Ambassador 2013 - 2014</li>
-                        <li>Diploma in LAN and WAN Technologies</li>
-                    </ul>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <span class="bg-indigo-100 text-indigo-800 text-sm font-semibold px-4 py-1 rounded-full uppercase tracking-wider">Portfolio</span>
+                    <h2 class="text-4xl font-bold text-gray-800 mt-2">Featured Projects</h2>
+                    <div class="w-24 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
                 </div>
-            </section>
-            <!-- Resume -->
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                        <div class="h-48 bg-indigo-600 flex items-center justify-center text-white">
+                            <i class="fas fa-cloud text-6xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Cloud Migration Framework</h3>
+                            <p class="text-gray-600 mb-4">A comprehensive framework for migrating on-premise applications to cloud platforms with minimal downtime.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">AWS</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Terraform</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Docker</span>
+                            </div>
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold flex items-center">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                        <div class="h-48 bg-indigo-600 flex items-center justify-center text-white">
+                            <i class="fas fa-database text-6xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Data Processing Pipeline</h3>
+                            <p class="text-gray-600 mb-4">An automated data processing system that handles millions of records daily with real-time analytics.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">AWS Lambda</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Redshift</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Step Functions</span>
+                            </div>
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold flex items-center">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                        <div class="h-48 bg-indigo-600 flex items-center justify-center text-white">
+                            <i class="fas fa-code text-6xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Developer SDK</h3>
+                            <p class="text-gray-600 mb-4">A comprehensive SDK that allows third-party developers to integrate with our platform seamlessly.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Ruby</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">REST API</span>
+                                <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">OAuth</span>
+                            </div>
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold flex items-center">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Education-->
+        <section id="education" class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <span class="bg-indigo-100 text-indigo-800 text-sm font-semibold px-4 py-1 rounded-full uppercase tracking-wider">Academic Background</span>
+                    <h2 class="text-4xl font-bold text-gray-800 mt-2">Education</h2>
+                    <div class="w-24 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+                </div>
+                
+                <div class="max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 border-l-4 border-indigo-600">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">SASTRA University</h3>
+                                <div class="text-gray-600 font-semibold mt-1">B.Tech Computer Science and Engineering</div>
+                                <div class="text-gray-500 mt-2">July 2010 - May 2014</div>
+                            </div>
+                            <div class="mt-4 md:mt-0">
+                                <div class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-lg font-semibold inline-block">
+                                    <i class="fas fa-graduation-cap mr-2"></i>
+                                    First Class with Distinction
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6 text-gray-700">
+                            <p>Specialized in advanced algorithms, distributed systems, and cloud computing. Participated in multiple hackathons and coding competitions, securing top positions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills-->
+        <section id="skills" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <span class="bg-indigo-100 text-indigo-800 text-sm font-semibold px-4 py-1 rounded-full uppercase tracking-wider">Expertise</span>
+                    <h2 class="text-4xl font-bold text-gray-800 mt-2">Technical Skills</h2>
+                    <div class="w-24 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Technical Skills -->
+                    <div data-aos="fade-right" data-aos-delay="100">
+                        <div class="bg-white p-8 rounded-lg shadow-xl">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                                <i class="fas fa-code text-indigo-600 mr-3"></i>
+                                Programming & Technologies
+                            </h3>
+                            
+                            <!-- Skill with progress bar -->
+                            <div class="mb-6">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700 font-semibold">AWS Cloud Services</span>
+                                    <span class="text-indigo-600 font-semibold">95%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-gradient-to-r from-indigo-600 to-blue-500 h-2.5 rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700 font-semibold">Docker & Kubernetes</span>
+                                    <span class="text-indigo-600 font-semibold">90%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-gradient-to-r from-indigo-600 to-blue-500 h-2.5 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700 font-semibold">Ruby on Rails</span>
+                                    <span class="text-indigo-600 font-semibold">85%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-gradient-to-r from-indigo-600 to-blue-500 h-2.5 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700 font-semibold">Node.js</span>
+                                    <span class="text-indigo-600 font-semibold">80%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-gradient-to-r from-indigo-600 to-blue-500 h-2.5 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700 font-semibold">Terraform</span>
+                                    <span class="text-indigo-600 font-semibold">85%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-gradient-to-r from-indigo-600 to-blue-500 h-2.5 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools & Soft Skills -->
+                    <div data-aos="fade-left" data-aos-delay="100">
+                        <div class="bg-white p-8 rounded-lg shadow-xl mb-8">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                                <i class="fas fa-tools text-indigo-600 mr-3"></i>
+                                Tools & Methodologies
+                            </h3>
+                            
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 flex items-center transform hover:scale-105 transition-transform duration-300">
+                                    <i class="fab fa-git-alt text-indigo-600 text-2xl mr-3"></i>
+                                    <span class="text-gray-700">Git</span>
+                                </div>
+                                
+                                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 flex items-center transform hover:scale-105 transition-transform duration-300">
+                                    <i class="fab fa-jenkins text-indigo-600 text-2xl mr-3"></i>
+                                    <span class="text-gray-700">Jenkins</span>
+                                </div>
+                                
+                                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 flex items-center transform hover:scale-105 transition-transform duration-300">
+                                    <i class="fas fa-tasks text-indigo-600 text-2xl mr-3"></i>
+                                    <span class="text-gray-700">JIRA</span>
+                                </div>
+                                
+                                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 flex items-center transform hover:scale-105 transition-transform duration-300">
+                                    <i class="fas fa-project-diagram text-indigo-600 text-2xl mr-3"></i>
+                                    <span class="text-gray-700">Agile/Scrum</span>
+                                </div>
+                                
+                                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 flex items-center transform hover:scale-105 transition-transform duration-300">
+                                    <i class="fas fa-cogs text-indigo-600 text-2xl mr-3"></i>
+                                    <span class="text-gray-700">Maven/Gradle</span>
+                                </div>
+                                
+                                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 flex items-center transform hover:scale-105 transition-transform duration-300">
+                                    <i class="fas fa-terminal text-indigo-600 text-2xl mr-3"></i>
+                                    <span class="text-gray-700">CLI Tools</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white p-8 rounded-lg shadow-xl">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                                <i class="fas fa-users text-indigo-600 mr-3"></i>
+                                Soft Skills
+                            </h3>
+                            
+                            <div class="flex flex-wrap gap-3">
+                                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold">Team Leadership</span>
+                                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold">Problem Solving</span>
+                                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold">Communication</span>
+                                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold">Project Management</span>
+                                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold">Critical Thinking</span>
+                                <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold">Time Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Interests & Awards Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Interests -->
+                    <div>
+                        <div class="text-center mb-8" data-aos="fade-up">
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-semibold px-4 py-1 rounded-full uppercase tracking-wider">Personal</span>
+                            <h2 class="text-3xl font-bold text-gray-800 mt-2">Interests</h2>
+                            <div class="w-16 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+                        </div>
+                        
+                        <div class="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1" data-aos="fade-right" data-aos-delay="100">
+                            <div class="flex items-center mb-6">
+                                <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-mountain text-indigo-600 text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800">Outdoor Adventures</h3>
+                            </div>
+                            <p class="text-gray-700 leading-relaxed mb-6">
+                                I enjoy exploring the outdoors, backpacking, and discovering uncharted territories. Nature provides the perfect balance to my technical work.
+                            </p>
+                            
+                            <div class="flex items-center mb-6">
+                                <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-film text-indigo-600 text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800">Sci-Fi & Fantasy</h3>
+                            </div>
+                            <p class="text-gray-700 leading-relaxed mb-6">
+                                When indoors, I indulge in sci-fi and fantasy movies that inspire creativity and innovative thinking.
+                            </p>
+                            
+                            <div class="flex items-center">
+                                <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-laptop-code text-indigo-600 text-2xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800">Tech Exploration</h3>
+                            </div>
+                            <p class="text-gray-700 leading-relaxed">
+                                I stay updated with the latest technological advancements and enjoy experimenting with new programming languages and frameworks.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Awards & Certifications -->
+                    <div>
+                        <div class="text-center mb-8" data-aos="fade-up">
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-semibold px-4 py-1 rounded-full uppercase tracking-wider">Recognition</span>
+                            <h2 class="text-3xl font-bold text-gray-800 mt-2">Awards & Certifications</h2>
+                            <div class="w-16 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+                        </div>
+                        
+                        <div class="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1" data-aos="fade-left" data-aos-delay="100">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bg-gradient-to-r from-indigo-50 to-blue-50 p-6 rounded-lg border-l-4 border-indigo-600">
+                                    <div class="flex items-center mb-4">
+                                        <div class="bg-indigo-100 p-2 rounded-full mr-3">
+                                            <i class="fas fa-award text-indigo-600"></i>
+                                        </div>
+                                        <h3 class="font-bold text-gray-800">Cisco Certified Network Associate</h3>
+                                    </div>
+                                    <p class="text-gray-600 text-sm">Industry-recognized certification validating networking skills</p>
+                                </div>
+                                
+                                <div class="bg-gradient-to-r from-indigo-50 to-blue-50 p-6 rounded-lg border-l-4 border-indigo-600">
+                                    <div class="flex items-center mb-4">
+                                        <div class="bg-indigo-100 p-2 rounded-full mr-3">
+                                            <i class="fab fa-microsoft text-indigo-600"></i>
+                                        </div>
+                                        <h3 class="font-bold text-gray-800">Microsoft Technology Associate</h3>
+                                    </div>
+                                    <p class="text-gray-600 text-sm">Web Development Fundamentals certification</p>
+                                </div>
+                                
+                                <div class="bg-gradient-to-r from-indigo-50 to-blue-50 p-6 rounded-lg border-l-4 border-indigo-600">
+                                    <div class="flex items-center mb-4">
+                                        <div class="bg-indigo-100 p-2 rounded-full mr-3">
+                                            <i class="fab fa-ibm text-indigo-600"></i>
+                                        </div>
+                                        <h3 class="font-bold text-gray-800">IBM Campus Ambassador</h3>
+                                    </div>
+                                    <p class="text-gray-600 text-sm">2013 - 2014 academic year representative</p>
+                                </div>
+                                
+                                <div class="bg-gradient-to-r from-indigo-50 to-blue-50 p-6 rounded-lg border-l-4 border-indigo-600">
+                                    <div class="flex items-center mb-4">
+                                        <div class="bg-indigo-100 p-2 rounded-full mr-3">
+                                            <i class="fas fa-network-wired text-indigo-600"></i>
+                                        </div>
+                                        <h3 class="font-bold text-gray-800">LAN/WAN Technologies</h3>
+                                    </div>
+                                    <p class="text-gray-600 text-sm">Diploma in network infrastructure design and management</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <span class="bg-indigo-100 text-indigo-800 text-sm font-semibold px-4 py-1 rounded-full uppercase tracking-wider">Get In Touch</span>
+                    <h2 class="text-4xl font-bold text-gray-800 mt-2">Contact Me</h2>
+                    <div class="w-24 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+                </div>
+                
+                <div class="max-w-5xl mx-auto">
+                    <div class="flex flex-col lg:flex-row bg-white rounded-lg shadow-xl overflow-hidden">
+                        <div class="lg:w-1/2 bg-gradient-to-br from-indigo-600 to-blue-500 p-12 text-white" data-aos="fade-right">
+                            <h3 class="text-2xl font-bold mb-6">Let's Connect</h3>
+                            <p class="mb-8 text-gray-100">I'm always open to discussing new projects, opportunities, or partnerships. Feel free to reach out!</p>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-center">
+                                    <div class="bg-white bg-opacity-20 h-12 w-12 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-map-marker-alt text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold">Location</h4>
+                                        <p class="text-gray-100">Chennai, India</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <div class="bg-white bg-opacity-20 h-12 w-12 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-phone text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold">Phone</h4>
+                                        <p class="text-gray-100">+91 - 9840612536</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <div class="bg-white bg-opacity-20 h-12 w-12 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-envelope text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold">Email</h4>
+                                        <a href="mailto:raghavkrish@proton.me" class="text-gray-100 hover:text-white">raghavkrish@proton.me</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-12">
+                                <h4 class="text-lg font-semibold mb-4">Follow Me</h4>
+                                <div class="flex space-x-4">
+                                    <a href="https://in.linkedin.com/in/raghav-krishnendar-a581343b" class="bg-white bg-opacity-20 h-10 w-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition duration-300">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="bg-white bg-opacity-20 h-10 w-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition duration-300">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="bg-white bg-opacity-20 h-10 w-10 rounded-full flex items-center justify-center hover:bg-opacity-30 transition duration-300">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="lg:w-1/2 p-12" data-aos="fade-left">
+                            <form>
+                                <div class="mb-6">
+                                    <label for="name" class="block text-gray-700 font-semibold mb-2">Your Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition duration-300" placeholder="John Doe">
+                                </div>
+                                
+                                <div class="mb-6">
+                                    <label for="email" class="block text-gray-700 font-semibold mb-2">Your Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition duration-300" placeholder="john@example.com">
+                                </div>
+                                
+                                <div class="mb-6">
+                                    <label for="subject" class="block text-gray-700 font-semibold mb-2">Subject</label>
+                                    <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition duration-300" placeholder="Project Inquiry">
+                                </div>
+                                
+                                <div class="mb-6">
+                                    <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition duration-300" placeholder="Your message here..."></textarea>
+                                </div>
+                                
+                                <button type="submit" class="w-full bg-gradient-to-r from-indigo-600 to-blue-500 text-white font-bold py-3 px-6 rounded-lg hover:from-indigo-700 hover:to-blue-600 transition duration-300 transform hover:-translate-y-1 shadow-lg">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-6 md:mb-0">
+                        <a href="#hero" class="text-2xl font-bold flex items-center">
+                            <span class="bg-white text-indigo-600 h-8 w-8 rounded-full flex items-center justify-center mr-2 shadow-md">RK</span>
+                            Raghav Krishnendar
+                        </a>
+                        <p class="text-gray-400 mt-2">Senior Software Engineer</p>
+                    </div>
+                    
+                    <div class="flex space-x-6">
+                        <a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a>
+                        <a href="#experience" class="text-gray-400 hover:text-white transition duration-300">Experience</a>
+                        <a href="#projects" class="text-gray-400 hover:text-white transition duration-300">Projects</a>
+                        <a href="#skills" class="text-gray-400 hover:text-white transition duration-300">Skills</a>
+                        <a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a>
+                    </div>
+                </div>
+                
+                <hr class="border-gray-800 my-8">
+                
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Raghav Krishnendar. All rights reserved.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://in.linkedin.com/in/raghav-krishnendar-a581343b" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-github text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
 </html>
